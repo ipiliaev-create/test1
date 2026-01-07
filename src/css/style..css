@@ -1,6 +1,3 @@
-@media (max-width: 600px) {
-    .menu {display: none;}
-}
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +10,7 @@
     width: 100%;
     height: 100vh;
 }
-div a {
+.button a {
     display: block;
     background-image: url('../img/photo_2026-01-08_01-17-59-Photoroom.png');
     background-repeat: no-repeat;
@@ -25,6 +22,6 @@ div a {
     font-size: 0;
 }
 
-div a:hover {
+.button a:hover {
     background-image: url('../img/photo_2026-01-08_01-17-53-Photoroom.png')
 }
