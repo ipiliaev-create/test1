@@ -19,6 +19,7 @@ main {
     background-repeat:no-repeat;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    box-shadow: 0 10px 15px -5px greenyellow;
     height: 300px;
 }
 
@@ -37,4 +38,36 @@ main {
 .header:hover .img{
      background-image: url(../img/Gemini_Generated_Image_oflz63oflz63oflz-Photoroom.png);
     z-index: 10;
+}
+.img-xac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  
+}
+.img-container {
+    width:400px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(26, 70, 80);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -5px greenyellow;
+}
+
+.img-container img {
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+}
+
+.img-container h1 {
+    padding: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
 }
