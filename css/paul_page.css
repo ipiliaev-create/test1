@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-main {
+body {
     background-color: rgb(81, 128, 138);
     height: 100vh;
 }
@@ -14,9 +14,9 @@ main {
     justify-content: center;
     align-items: flex-end;
     background-image: url(../img/Matrix\ Background\ Free\ Vector.svg);
-    background-position:center;
+    background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 10px 15px -5px greenyellow;
@@ -24,7 +24,7 @@ main {
 }
 
 
-.header .img{
+.header .img {
     width: 500px;
     height: 500px;
     background-image: url(../img/Gemini_Generated_Image_nncg88nncg88nncg.png);
@@ -35,19 +35,22 @@ main {
     z-index: 0;
 }
 
-.header:hover .img{
-     background-image: url(../img/Gemini_Generated_Image_oflz63oflz63oflz-Photoroom.png);
+.header:hover .img {
+    background-image: url(../img/Gemini_Generated_Image_oflz63oflz63oflz-Photoroom.png);
     z-index: 10;
 }
+
 .img-xac {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     height: 500px;
-  
+
 }
+
 .img-container {
-    width:400px;
+    width: 400px;
     text-align: center;
     margin: 20px;
     background-color: rgb(26, 70, 80);
@@ -59,7 +62,7 @@ main {
     display: block;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
     background-color: aquamarine;
@@ -70,4 +73,22 @@ main {
     font-size: 20px;
     font-style: italic;
     color: rgb(255, 255, 255);
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    border-radius: 15px;
+    box-shadow: 0 10px 15px -5px greenyellow;
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    margin-bottom: 300px;
+    object-fit: cover;
 }
