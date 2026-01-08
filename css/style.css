@@ -3,12 +3,15 @@
     margin: 0;
     padding: 0;
 }
-main {
-    background-color: rgb(81, 128, 138);
-      display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+body { font-size: 16px; }
+@media (min-width: 768px) {
+  body { font-size: 18px; }
+  .container { max-width: 750px; }
+}
+
+@media (min-width: 1200px) {
+  body { font-size: 20px; }
+  .container { max-width: 1170px; }
 }
 .gradient {
     position: relative;
