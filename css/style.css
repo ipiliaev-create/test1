@@ -3,14 +3,15 @@
     margin: 0;
     padding: 0;
 }
-
+main {
+    background-color: rgb(81, 128, 138);
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
-
 .gradient {
     position: relative;
     border-radius: 50%;
@@ -19,6 +20,7 @@
     cursor: pointer;
     display: block;
     text-decoration: none;
+    color: white;
     font-size: 0px;
     background-image: url(../img/photo_2026-01-08_01-17-59-Photoroom.png);
     background-repeat: no-repeat;
@@ -27,8 +29,11 @@
     border-radius: 50%;
     width: 220px;
     height: 220px;
+    z-index: 2;
 }
 
 .gradient:hover {
-    background-image: url('../img/photo_2026-01-08_01-17-53-Photoroom.png');
+    background-image: url(../img/photo_2026-01-08_01-17-53-Photoroom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
