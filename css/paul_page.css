@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    box-shadow: 0 10px 15px -5px greenyellow;
+    box-shadow: 0 10px 15px -5px rgb(20, 20, 20);
     height: 300px;
 }
 
@@ -53,9 +53,9 @@ body {
     width: 400px;
     text-align: center;
     margin: 20px;
-    background-color: rgb(26, 70, 80);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    box-shadow: 0 10px 15px -5px greenyellow;
+    box-shadow: 0 10px 15px -5px rgb(217, 255, 160);
 }
 
 .img-container img {
@@ -72,7 +72,7 @@ body {
     padding: 10px;
     font-size: 20px;
     font-style: italic;
-    color: rgb(255, 255, 255);
+    color: rgb(3, 8, 0);
 }
 
 .gallery {
@@ -85,9 +85,23 @@ body {
 
 .gallery img {
     border-radius: 15px;
-    box-shadow: 0 10px 15px -5px greenyellow;
+    box-shadow: 0 10px 15px -5px rgb(217, 255, 160);
     width: 400px;
     height: auto;
     margin: 5px;
     object-fit: cover;
+}
+.container-hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.hr {
+
+    width: 700px;
+    height: 4px;
+    background-color:rgb(148, 235, 255);
+
 }
