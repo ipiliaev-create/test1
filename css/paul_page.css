@@ -40,40 +40,6 @@ body {
     z-index: 10;
 }
 
-.img-xac {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 500px;
-
-}
-
-.img-container {
-    width: 400px;
-    text-align: center;
-    margin: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-}
-
-.img-container img {
-    display: block;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    background-color: aquamarine;
-}
-
-.img-container h1 {
-    padding: 10px;
-    font-size: 20px;
-    font-style: italic;
-    color: rgb(3, 8, 0);
-}
-
 .gallery {
     display: flex;
     gap: 15px;
@@ -95,6 +61,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 20px;
 }
 
 .photo-gallery p {
@@ -102,7 +69,7 @@ body {
     font-size: 22px;
     font-weight: bold;
     font-style: italic;
-    color: aquamarine;
+    color: rgb(3, 8, 0);
 }
 
 .container-hr {
@@ -118,11 +85,6 @@ body {
     background-color: rgb(148, 235, 255);
     border-radius: 15px;
 
-}
-
-
-div .it-color {
-    color: rgb(3, 8, 0);
 }
 
 .photo-gallery p:hover {
@@ -150,6 +112,7 @@ h1:hover {
 .container-it h2{
     padding: 10px;
     font-size: 22px;
+    font-style: italic;
     color: rgb(3, 8, 0);
 }
 
@@ -161,3 +124,4 @@ h1:hover {
     color: rgb(230, 255, 1);
 
 }
+
