@@ -3,13 +3,6 @@
     margin: 0;
     padding: 0;
 }
-body { font-size: 16px; }
-
-@media (max-width: 991px) {
-  body { font-size: 14px; }
-}
-@media (max-width: 767px) {
-}
 main {
     background-color: rgb(81, 128, 138);
       display: flex;
