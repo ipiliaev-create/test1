@@ -37,6 +37,8 @@ body {
 
 .header:hover .img {
     background-image: url(../img/Gemini_Generated_Image_oflz63oflz63oflz-Photoroom.png);
+    position: relative;
+    margin-left: 2px;
     z-index: 10;
 }
 
@@ -51,10 +53,13 @@ body {
 
 .photo-gallery img {
     border-radius: 15px;
-    width: 400px;
-    height: auto;
+    width: auto;
     margin: 5px;
     object-fit: cover;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .photo-gallery {
@@ -80,7 +85,7 @@ body {
     height: 100px;
 }
 
-.hr {
+hr {
     width: 700px;
     height: 4px;
     background-color: rgb(148, 235, 255);
@@ -102,7 +107,7 @@ h1:hover {
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
 .relax-paul {
@@ -110,19 +115,41 @@ h1:hover {
     height: auto;
 }
 
-.container-it h2{
-    padding: 10px;
+.container-it h2 {
+    padding: 10px 0;
     font-size: 22px;
     font-style: italic;
     color: rgb(3, 8, 0);
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.vova-pidor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    padding: 60px;
 }
 
 .free-background {
-    height: 600px;
     width: 600px;
+    height: 600px;
 }
+
 .container-it h2:hover {
     color: rgb(230, 255, 1);
 
 }
 
+.relax-paul {
+    display: block;
+    width: 400px;
+    max-height: 600px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.relax-paul img {
+    object-fit: cover;
+    max-width: 400px;
+}
