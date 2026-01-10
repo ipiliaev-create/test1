@@ -12,45 +12,56 @@
         <link rel="apple-touch-icon" sizes="180x180"
             href="img/ico/apple-touch-icon.png" />
         <link rel="manifest" href="img/ico/site.webmanifest" />
-    </head>
-    <body>
-        <main>
-            <section>
-                <div class="header">
-                    <div class="img"></div>
-                </div>
-            </section>
-            <section>
-                <div class="gallery">
-                    <div class="photo-gallery">
-                        <img
-                            src="img/Gemini_Generated_Image_ky4hnrky4hnrky4h.png"
-                            alt="image1">
-                        <p>IT: Инвестируй в свой мозг, а не в железо</p>
-                    </div>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap"
+            rel="stylesheet">
+
+        <body>
+            <header>
+                <div class="img"></div>
+            </header>
+            <main>
+                <section>
                     <div class="gallery">
                         <div class="photo-gallery">
-                            <img
-                                src="img/Gemini_Generated_Image_oukq01oukq01oukq.png"
-                                alt="image1">
-                            <p>Будущее уже рядом</p>
+                            <a href="#"><img
+                                    src="img/Gemini_Generated_Image_ky4hnrky4hnrky4h.png"
+                                    alt="image1"></a>
+                            <p><span class="it">IT</span>: Invest in your brain,
+                                not your hardware.</p>
                         </div>
                         <div class="photo-gallery">
-                            <img
-                                src="img/Gemini_Generated_Image_bldr2ybldr2ybldr.png"
-                                alt="image2">
-                            <p>IT: Меняем мир в один клик.</p>
+                            <a href="#">
+                                <img
+                                    src="img/Gemini_Generated_Image_oukq01oukq01oukq.png"
+                                    alt="image1">
+                            </a>
+                            <p>The future is already here</p>
                         </div>
                         <div class="photo-gallery">
-                            <img src="img/photo_2026-01-08_17-32-45.jpg"
-                                alt="image3">
-                            <p>Компилируем мечты в реальность</p>
+                            <a href="#">
+                                <img
+                                    src="img/Gemini_Generated_Image_bldr2ybldr2ybldr.png"
+                                    alt="image2">
+                            </a>
+                            <p><sapn class="it">IT:</sapn>Change the world in
+                                one click.</p>
+                        </div>
+                        <a href="#">
+                            <div class="photo-gallery">
+                                <img src="img/photo_2026-01-08_17-32-45.jpg"
+                                    alt="image3">
+                            </a>
+                            <p>We compile dreams into reality</p>
                         </div>
                     </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
                 </section>
-               <div class="container-hr">
-                <hr>
-               </div>
                 <section>
                     <div class="container-it">
                         <div class="relax-paul">
@@ -60,10 +71,27 @@
                         </div>
                     </div>
                 </section>
-                <section>
-                    <div class="free-background">
-                    </div>
-                </section>
             </main>
+            <script>
+        var text = document.getElementsByTagName("header")[0];
+        canvas = text.appendChild(document.createElement('canvas'))
+        screen = window.screen;
+        width = canvas.width = screen.width;
+        height = 300;
+        p = Array(255).join(1).split('');
+        context = canvas.getContext('2d');
+
+        setInterval(function(){
+            context.fillStyle = 'rgba(0,0,0,0.05)';
+            context.fillRect(0, 0, width, height);
+            context.fillStyle = 'rgba(0,255,0,1)';
+            p = p.map(function(v,i){
+                r = Math.random();
+                context.fillText(String.fromCharCode(Math.floor(2720 + r * 33)),i*10,v);
+                v += 10; 
+                return v > 768 + r * 1e4 ? 0 : v;
+            })
+        }, 33)
+    </script>
         </body>
     </html>

@@ -4,60 +4,69 @@
     padding: 0;
 }
 
+
 body {
     background-color: rgb(81, 128, 138);
     height: 100vh;
+    font-family: "Ribeye Marrow", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
 }
 
-.header {
+
+header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(../img/Matrix\ Background\ Free\ Vector.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 10px 15px -5px rgb(20, 20, 20);
     height: 300px;
+    position: relative;
+}
+
+header canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header>* {
+    position: relative;
+    z-index: 2;
 }
 
 
-.header .img {
-    width: 500px;
-    height: 500px;
-    background-image: url(../img/Gemini_Generated_Image_nncg88nncg88nncg.png);
+header .img {
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/12.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 0;
+    z-index: 5;
 }
 
-.header:hover .img {
-    background-image: url(../img/Gemini_Generated_Image_oflz63oflz63oflz-Photoroom.png);
-    position: relative;
-    margin-left: 2px;
-    z-index: 10;
-}
 
 .gallery {
     display: flex;
     margin-top: 10px;
     gap: 15px;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .photo-gallery img {
     border-radius: 15px;
-    width: auto;
-    margin: 5px;
     object-fit: cover;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 400px;
+    min-height: 400px;
     max-width: 400px;
     max-height: 400px;
 }
@@ -65,40 +74,34 @@ body {
 .photo-gallery {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     margin: 20px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 400px;
+    height: auto;
 }
+
 
 .photo-gallery p {
-    margin-top: 10px;
+    padding: 10px 0;
     font-size: 22px;
-    font-weight: bold;
     font-style: italic;
-    color: rgb(3, 8, 0);
+    word-wrap: break-word;
+    cursor: pointer;
 }
 
-.container-hr {
+.hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
 }
 
 hr {
+    margin: 20px;
     width: 700px;
-    height: 4px;
-    background-color: rgb(148, 235, 255);
+    height: 6px;
+    background-color: rgb(215, 255, 155);
     border-radius: 15px;
-
-}
-
-.photo-gallery p:hover {
-    color: rgb(230, 255, 1);
-}
-
-h1:hover {
-    color: rgb(230, 246, 255);
 }
 
 .container-it {
@@ -123,22 +126,10 @@ h1:hover {
     word-wrap: break-word;
     cursor: pointer;
 }
-.vova-pidor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 60px;
-    padding: 60px;
-}
 
 .free-background {
     width: 600px;
     height: 600px;
-}
-
-.container-it h2:hover {
-    color: rgb(230, 255, 1);
-
 }
 
 .relax-paul {
@@ -152,4 +143,32 @@ h1:hover {
 .relax-paul img {
     object-fit: cover;
     max-width: 400px;
+}
+
+.photo-gallery:hover {
+    box-shadow: 0 0 22px 12px rgba(172, 255, 47, 0.986);
+    border-radius: 15px;
+}
+
+header:hover .img {
+    background-image: url(../img/11.png);
+    position: relative;
+    z-index: 10;
+}
+
+h1:hover {
+    color: rgb(230, 246, 255);
+}
+
+.container-it h2:hover {
+    color: rgb(230, 255, 1);
+
+}
+
+.it {
+    color: rgb(255, 217, 0)
+}
+
+p {
+    color: rgb(0, 255, 42);
 }
