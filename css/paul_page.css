@@ -183,3 +183,12 @@ p {
         background-position: 0% center
     }
 }
+
+aside  {
+    width: 400px;
+    height: 800px;
+}
+aside img{
+width: 400px;
+height: auto;
+}
