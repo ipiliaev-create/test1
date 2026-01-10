@@ -9,8 +9,8 @@ body {
     background-color: rgb(81, 128, 138);
     height: 100vh;
     font-family: "Ribeye Marrow", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 
 
 }
@@ -165,10 +165,16 @@ h1:hover {
 
 }
 
-.it {
-    color: rgb(255, 217, 0)
-}
-
 p {
-    color: rgb(0, 255, 42);
+  font-weight: 600;
+  background: linear-gradient(90deg, #00ff00, #ffb400, #ff3333, #334dff, #00ff00);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textflow 5s linear infinite;
+}
+@keyframes textflow {
+  from {background-position: 200% center}         
+  to {background-position: 0% center}
 }
