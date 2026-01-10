@@ -62,7 +62,7 @@ header .img {
 }
 
 .photo-gallery img {
-    border-radius: 15px;
+    border-radius: 5px;
     object-fit: cover;
     min-width: 400px;
     min-height: 400px;
@@ -73,7 +73,7 @@ header .img {
 .photo-gallery {
     display: flex;
     flex-direction: column;
-    margin: 20px 10px 0 10px;
+    margin: 10px;
     min-width: 400px;
     min-height: 400px;
     max-width: 400px;
