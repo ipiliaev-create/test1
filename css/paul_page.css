@@ -8,10 +8,6 @@
 body {
     background-color: rgb(81, 128, 138);
     height: 100vh;
-    font-family: "Rampart One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-
 }
 
 
@@ -59,6 +55,9 @@ header .img {
     margin-top: 10px;
     gap: 15px;
     justify-content: space-between;
+    font-family: "Rampart One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     flex-wrap: wrap;
 }
 
@@ -166,15 +165,21 @@ h1:hover {
 }
 
 p {
-  font-weight: 600;
-  background: linear-gradient(90deg, #0b180f, #1b3b25, #397a4d, #5dce7f, #0b180f);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textflow 10s linear infinite;
+    font-weight: 600;
+    background: linear-gradient(90deg, #0b180f, #1b3b25, #397a4d, #5dce7f, #0b180f);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textflow 10s linear infinite;
 }
+
 @keyframes textflow {
-  from {background-position: 200% center}         
-  to {background-position: 0% center}
+    from {
+        background-position: 200% center
+    }
+
+    to {
+        background-position: 0% center
+    }
 }
