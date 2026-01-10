@@ -23,6 +23,7 @@ header {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0 10px 15px -5px rgb(20, 20, 20);
+    min-width: 420px;
     height: 300px;
     position: relative;
 }
@@ -74,9 +75,9 @@ header .img {
 .photo-gallery {
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    min-width: 200px;
-    min-height: 200px;
+    margin: 20px 10px 0 10px;
+    min-width: 400px;
+    min-height: 400px;
     max-width: 400px;
     height: auto;
 }
