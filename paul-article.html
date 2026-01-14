@@ -17,30 +17,33 @@
                 padding: 0;
                 box-sizing: border-box;
             }
+            html, body {
+                min-height: 100%;
+            }
             body {
                 background-image: url("img/39879210_8764039.svg");
+                background-attachment: fixed;
                 background-size: cover;
+                background-position: center;
                 background-repeat: no-repeat;
-                width: 100%;
-                height: 100vh;
+                min-height: 100vh;
                 font-size: 20px;
             }
-
             main {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                 display: flex;
+                 justify-content: center;
                 width: 100%;
-                height: 100vh;
+                min-height: 100vh;
             }
             .info {
-                padding: 20px;
-                flex-wrap:wrap;    
+                padding: 20px;   
+                overflow-wrap: break-word;
                 width: 70%;
                 height: auto;
                 border-radius: 15px;
                 backdrop-filter: blur(10px);
                 -webkit-backdrop-filter: blur(10px);
+                 background: rgba(0, 0, 0, 0.24);
                 border: 1px solid greenyellow;
             }
             .info:hover{
@@ -67,12 +70,31 @@
           li:hover {
             color: rgb(134, 255, 255);
           }
+          header {
+            width:100%;
+            height: 60px;
+          }
+          header a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url('img/ico/back_green_button_icon_227867.png');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 5px;
+          }
+          header a:hover {
+            background-image: url('img/ico/1.png');
+          }
         </style>
     </head>
     <body>
+        <header>
+            <a href="paul_page.html" class="back"></a>
+        </header>
         <main>
-            <div class="info">
-
+                 <div class="info">
                 <h1>Павел Притула: Манифест Цифрового Титана и Код,
                     Определяющий
                     Эпоху</h1>
@@ -87,7 +109,7 @@
                     инструмент изменения реальности.</p>
                 <hr>
                 <h2>Путь Мастерства: Сквозь Тернии к Алгоритмам</h2>
-                <p>Павел Перетула никогда не искал протоптанных троп. В то время
+                <p>Павел Притула никогда не искал протоптанных троп. В то время
                     как
                     большинство гналось за сиюминутным хайпом, он погружался в
                     фундаментальную истину. Для него монитор был не окном в
@@ -99,7 +121,7 @@
                     проект
                     становился ответом на вызов, который казался индустрии
                     непреодолимым.</p>
-                <h2>Три столпа «Метода Перетулы»:</h2>
+                <h2>Три столпа «Метода Притулы»:</h2>
                 <ul>
                     <li>Эстетика структуры: Код Павла — это поэзия. Он чист,
                         лаконичен и лишен энтропии.</li>
@@ -113,7 +135,7 @@
                 <h2>Философия «Интеллектуальной Неукротимости»</h2>
                 <p>Что делает Павла легендой? Его интеллектуальное бесстрашие.
                     Он обладает редким даром — не бояться сложности, а поглощать
-                    её. В мире, где технологии устаревают за год, Перетула
+                    её. В мире, где технологии устаревают за год, Притула
                     остается актуальным, потому что он сам задает темп
                     эволюции.</p>
                 <p class="italic">«Средний разработчик решает задачи. Великий
@@ -137,7 +159,7 @@
                     <li>Постоянная Трансформация. Быть лучшим — значит каждый
                         день ставить под сомнение свои вчерашние знания.</li>
                 </ol>
-            </div>
+           </div>
         </main>
     </body>
 </html>
