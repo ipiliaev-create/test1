@@ -15,7 +15,6 @@ main {
 .gradient {
     position: relative;
     border-radius: 50%;
-    border: none;
     padding: 0;
     cursor: pointer;
     display: inline-block;

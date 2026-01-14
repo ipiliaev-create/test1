@@ -166,6 +166,7 @@ h1:hover {
 }
 
 p {
+    margin: 7px;
     font-weight: 600;
     background: linear-gradient(90deg, #006400, #00FF00, #FFFF00, #00FF7F, #006400);
     background-size: 200% auto;
@@ -186,13 +187,27 @@ p {
 }
 
 aside {
-    margin-left: 20px;
+    text-align: center;
+    margin: 20px 0 0 20px;
     border-radius: 15px;
     width: 400px;
     height: 800px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(172, 255, 47, 0.986);
 }
 
 aside img {
     width: 400px;
     height: auto;
+}
+
+aside a {
+    font-size: 20px;
+    color: rgba(172, 255, 47, 0.986);
+    
+}
+aside a:hover {
+    color: rgba(237, 255, 211, 0.986);
 }
