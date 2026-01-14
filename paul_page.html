@@ -1,108 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>paul</title>
-        <link rel="stylesheet" href="css/paul_page.css">
-        <link rel="icon" type="image/png" href="img/ico/favicon-96x96.png"
-            sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="img/ico/favicon.svg" />
-        <link rel="shortcut icon" href="img/ico/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180"
-            href="img/ico/apple-touch-icon.png" />
-        <link rel="manifest" href="img/ico/site.webmanifest" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paul</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ribeye+Marrow&display=swap"
-            rel="stylesheet">
-        <body>
-            <header>
-                <div class="img"></div>
-            </header>
-            <main>
-                <section>
-                    <div class="gallery">
-                        <div class="photo-gallery">
-                            <a href="#"><img
-                                    src="img/Gemini_Generated_Image_ky4hnrky4hnrky4h.png"
-                                    alt="image1"></a>
-                            <p>IT: Invest in your brain,
-                                not your hardware.</p>
-                        </div>
-                        <div class="photo-gallery">
-                            <a href="#">
-                                <img
-                                    src="img/Gemini_Generated_Image_oukq01oukq01oukq.png"
-                                    alt="image1">
-                            </a>
-                            <p>The future is already here</p>
-                        </div>
-                        <div class="photo-gallery">
-                            <a href="#">
-                                <img
-                                    src="img/Gemini_Generated_Image_bldr2ybldr2ybldr.png"
-                                    alt="image2">
-                            </a>
-                            <p><sapn class="it">IT:</sapn>Change the world in
-                                one click.</p>
-                        </div>
-                        <div class="photo-gallery">
-                            <a href="#">
-                                <img src="img/photo_2026-01-08_17-32-45.jpg"
-                                    alt="image3">
-                            </a>
-                            <p>We compile dreams into reality</p>
-                        </div>
-                    </div>
-                    <div class="hr">
-                        <hr>
-                    </div>
-                </section>
-                <section>
-                    <aside>
-                        <img src="img/matrica.png" alt="matrica">
-                        <ul>
-                            <li><a href="paul-article.html"
-                                    class="article-paul">IT-гений</a></li>
-                            <li><a
-                                    href="https://ru.linkedin.com/pulse/%D0%B8%D1%82-%D1%82%D1%80%D0%B5%D0%BD%D0%B4%D1%8B-2026-selecty-hr-bstff">IT-тренды
-                                    2026</a></li>
-                            <li><a href="https://habr.com/ru/companies/inferit/articles/893434/">История:IT</a></li>
-                        </ul>
-                    </aside>
-                </section>
-            </main>
-            <script>
-        var text = document.getElementsByTagName("header")[0];
-        canvas = text.appendChild(document.createElement('canvas'))
-        screen = window.screen;
-        width = canvas.width = screen.width;
-        height = 300;
-        p = Array(255).join(1).split('');
-        context = canvas.getContext('2d');
+    <link rel="stylesheet" href="css/paul_page.css">
 
-        setInterval(function(){
-            context.fillStyle = 'rgba(0,0,0,0.05)';
-            context.fillRect(0, 0, width, height);
-            context.fillStyle = 'rgba(0,255,0,1)';
-            p = p.map(function(v,i){
-                r = Math.random();
-                context.fillText(String.fromCharCode(Math.floor(2720 + r * 33)),i*10,v);
-                v += 10; 
-                return v > 768 + r * 1e4 ? 0 : v;
-            })
-        }, 33)
-    </script>
-    <footer>
-        <div class="contact">
-            <a href="#" class="contact-ico1"></a>
-            <a href="mailto:ilia@gmail.com" class="contact-ico2" target="_blank" ></a>
-            <a href="#" class="contact-ico3"></a>
+    <link rel="icon" type="image/png" href="img/ico/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/ico/favicon.svg">
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+    <link rel="manifest" href="img/ico/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Ribeye+Marrow&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="img"></div>
+</header>
+<main>
+    <section>
+        <div class="gallery">
+
+            <div class="photo-gallery">
+                <a href="#">
+                    <img src="img/Gemini_Generated_Image_ky4hnrky4hnrky4h.png" alt="IT illustration">
+                </a>
+                <p>IT: Invest in your brain, not your hardware.</p>
+            </div>
+
+            <div class="photo-gallery">
+                <a href="#">
+                    <img src="img/Gemini_Generated_Image_oukq01oukq01oukq.png" alt="Future technology">
+                </a>
+                <p>The future is already here</p>
+            </div>
+
+            <div class="photo-gallery">
+                <a href="#">
+                    <img src="img/Gemini_Generated_Image_bldr2ybldr2ybldr.png" alt="Digital world">
+                </a>
+                <p><span class="it">IT:</span> Change the world in one click.</p>
+            </div>
+
+            <div class="photo-gallery">
+                <a href="#">
+                    <img src="img/photo_2026-01-08_17-32-45.jpg" alt="Programming art">
+                </a>
+                <p>We compile dreams into reality</p>
+            </div>
+
         </div>
-        <div class="author-blok"><p>©2026<span class="slash">/</span><span class="author">ilia piliaev</span></p></div>
-    </footer>
-        </body>
-    </html>
+
+        <div class="hr">
+            <hr>
+        </div>
+    </section>
+    <section class="info-link-container">
+        <div class="info-link">
+            <img src="img/matrica.png" alt="Matrix">
+            <ul>
+                <li><a href="paul-article.html">IT-гений</a></li>
+                <li><a href="https://ru.linkedin.com/pulse/%D0%B8%D1%82-%D1%82%D1%80%D0%B5%D0%BD%D0%B4%D1%8B-2026-selecty-hr-bstff">IT-тренды 2026</a></li>
+                <li><a href="https://habr.com/ru/companies/inferit/articles/893434/">История IT</a></li>
+            </ul>
+        </div>
+        <div class="main-info"></div>
+    </section>
+</main>
+
+<footer>
+    <div class="contact">
+        <a href="#" class="contact-ico1"></a>
+        <a href="mailto:ilia@gmail.com" class="contact-ico2" target="_blank"></a>
+        <a href="#" class="contact-ico3"></a>
+    </div>
+
+    <div class="author-blok">
+        <p>©2026<span class="slash">/</span><span class="author">ilia piliaev</span></p>
+    </div>
+</footer>
+
+<script>
+    const header = document.querySelector("header");
+    const canvas = document.createElement("canvas");
+    header.appendChild(canvas);
+
+    const context = canvas.getContext("2d");
+    const height = 300;
+    let width = canvas.width = window.innerWidth;
+    canvas.height = height;
+
+    let p = Array(255).join(1).split('');
+
+    window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+    });
+
+    setInterval(() => {
+        context.fillStyle = 'rgba(0,0,0,0.05)';
+        context.fillRect(0, 0, width, height);
+        context.fillStyle = 'rgba(0,255,0,1)';
+
+        p = p.map((v, i) => {
+            const r = Math.random();
+            context.fillText(
+                String.fromCharCode(Math.floor(2720 + r * 33)),
+                i * 10,
+                v
+            );
+            v += 10;
+            return v > height + r * 10000 ? 0 : v;
+        });
+    }, 33);
+</script>
+
+</body>
+</html>
