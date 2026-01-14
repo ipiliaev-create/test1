@@ -204,10 +204,13 @@ aside img {
 }
 
 aside a {
+    text-decoration: none;
+    display: block;
     font-size: 20px;
     color: rgba(172, 255, 47, 0.986);
     
 }
 aside a:hover {
     color: rgba(237, 255, 211, 0.986);
+    transform: scale(1.1);
 }
