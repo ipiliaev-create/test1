@@ -181,12 +181,13 @@ footer {
     box-shadow: 0 -5px 40px #42cde9;
 }
 
-@media screen and (max-width: 360px) {
-.cont1,
-.cont2,
-.cont3,
-.cont4 {
-    width: 162px;
-    height: 162px;
-}
+@media screen and (max-width: 480px) {
+
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+        width: 189px;
+        height: 192px;
+    }
 }
