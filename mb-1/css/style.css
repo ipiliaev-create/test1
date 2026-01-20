@@ -191,3 +191,14 @@ footer {
         height: 192px;
     }
 }
+
+@media screen and (max-width: 375px) {
+
+    .cont1,
+    .cont2,
+    .cont3,
+    .cont4 {
+        width: 166px;
+        height: 161px;
+    }
+}
