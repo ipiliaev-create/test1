@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    background: #000;
+    object-position: center;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+header img {
+    width: auto;
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.moon-content {
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    height: 100%;
+}
+
+.moon-content h1,
+h2 {
+    background: linear-gradient(to right, rgb(174, 0, 255), rgb(236, 95, 255), rgb(255, 155, 250), rgb(255, 0, 191), rgb(174, 0, 255));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shine 10s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+hr {
+    border: none;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(69 219 249), rgb(0, 0, 0));
+    height: 2px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 25px 1px #0000ff;
+
+}
+
+
+.moon-content img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 14px rgb(162, 191, 253));
+    animation: spinHorizontal 3s linear infinite;
+
+}
+
+@keyframes spinHorizontal {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.moon-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    height: 100%;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.cont-foot {
+    margin: 20px 0 30px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0px 0px 9px rgb(74 228 255 / 35%);
+    border: 1px solid rgb(255, 0, 242);
+    border-radius: 15px;
+    background: #00292e;
+}
+
+.cont1 {
+    background-image: url('../img/mystica1.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.cont2 {
+    background-image: url('../img/mystica2.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.cont3 {
+    background-image: url('../img/mystica3.png');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.cont4 {
+    background-image: url('../img/mystica4.jpeg');
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.ball {
+    position: absolute;
+    top: -24px;
+    width: 40px;
+    height: 50px;
+}
+
+.ball img {
+    width: 40px;
+    height: 50px;
+    filter: drop-shadow(0px -9px 7px rgb(255, 255, 255));
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: black;
+    box-shadow: 0 -5px 40px #42cde9;
+}
