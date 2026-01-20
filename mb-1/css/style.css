@@ -32,9 +32,9 @@ header img {
 
 .burger-icon {
     display: block;
-    position: relative;
-    right: 35px;
-    margin-top: 20px;
+    position: fixed;
+    left: 16px;
+    margin-top: 29px;
     width: 30px;
     height: 20px;
     cursor: pointer;
@@ -106,6 +106,7 @@ header img {
     color: #ffa3ff;
     font-size: 34px;
 }
+
 
 .burger-checkbox:checked~.menu-list {
     top: 0;
