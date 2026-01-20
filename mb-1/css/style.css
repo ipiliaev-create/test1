@@ -90,11 +90,12 @@ header img {
     background: #3b004d;
     list-style: none;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius:15px;
+    border-bottom-right-radius: 15px;
     padding: 50px 20px;
     transition: top 0.4s ease;
     box-shadow: -22px 0 28px rgb(0 0 0);
     z-index: 9;
+    border-bottom: 13px solid rgb(162, 191, 253);
 }
 
 .menu-list li {
@@ -279,7 +280,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
 
     .cont1,
     .cont2,
