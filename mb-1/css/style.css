@@ -87,7 +87,7 @@ header img {
     top: -100%;
     width: 100%;
     height: auto;
-    background: #364b93;
+    background: #000000;
     list-style: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -95,7 +95,7 @@ header img {
     transition: top 0.4s ease;
     box-shadow: -22px 0 28px rgb(0 0 0);
     z-index: 9;
-    border-bottom: 13px solid rgb(255 0 242);
+    border-bottom: 13px solid #309aaf;
 }
 
 .menu-list li {
@@ -104,7 +104,7 @@ header img {
 
 .menu-list a {
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color:#309aaf ;
     font-size: 34px;
 }
 
@@ -117,11 +117,11 @@ main {
     height: 100%;
 }
 .fortune-taller {
-    display: none;
     position: absolute;
+    display: none;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 11;
     background: #ffffff;
 }
 
@@ -185,6 +185,8 @@ hr {
     display: flex;
     justify-content: center;
     height: auto;
+    position: relative;
+    min-height: 100vh;
     flex-wrap: wrap;
     gap: 10px;
     padding: 5px 10px;
@@ -286,9 +288,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
     height: 100px;
     background: black;
     box-shadow: 0 -5px 40px #42cde9;
+    z-index: 12;
 }
 
 @media screen and (max-width: 480px) {
