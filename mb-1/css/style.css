@@ -87,15 +87,15 @@ header img {
     top: -100%;
     width: 100%;
     height: auto;
-    background: #3b004d;
+    background: #364b93;
     list-style: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    padding: 50px 20px;
+    padding-top: 20px;
     transition: top 0.4s ease;
     box-shadow: -22px 0 28px rgb(0 0 0);
     z-index: 9;
-    border-bottom: 13px solid rgb(162, 191, 253);
+    border-bottom: 13px solid rgb(255 0 242);
 }
 
 .menu-list li {
@@ -104,7 +104,7 @@ header img {
 
 .menu-list a {
     text-decoration: none;
-    color: #ffa3ff;
+    color: hsl(0, 0%, 100%);
     font-size: 34px;
 }
 
